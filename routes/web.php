@@ -68,6 +68,17 @@ Route::get('/pantallaPrincipalDeLaClaseDeCienciasNaturales', function () {
     return view('CienciasNaturales/pantallaPrincipalDeLaClaseDeCienciasNaturales');
 });
 
+//MATEMATICAS
+Route::get('/pantallaClaseMat',function (){
+    return view('Matematicas/pantallaClaseMat');
+});
+Route::get('/NumerosOrdinales',function (){
+    return view('Matematicas/NumerosOrdinales');
+});
+
+Route::get('/tipoRelacionObjetTamaños',function (){
+    return view('Matematicas/tipoRelacionObjetTamaños');
+});
 
 //otros ejemplos
 Route::get('/otros', function () {
@@ -75,3 +86,15 @@ Route::get('/otros', function () {
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
